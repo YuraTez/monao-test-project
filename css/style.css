@@ -1,0 +1,137 @@
+html{
+    font-size: 10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background: #7AB4CC;
+}
+.header-wrapper{
+    max-width: 120rem;
+    margin: 0 auto;
+    display:  flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-title{
+    font-family: "Helvetica LT", sans-serif;
+    font-size: 4.8rem;
+    line-height: 6rem;
+    color: #1F658A;
+}
+.header-button{
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    font-family: "Helvetica", sans-serif;
+    border-radius: 1rem;
+    margin:0 0.5rem;
+}
+.registration-wrapper{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.registration-block{
+    position: absolute;
+    top: -100%;
+    left: calc(50% - 20rem);
+    width: 40rem;
+    background: #ECF1F0;
+    border-radius: 1rem;
+    transition: all 0.5s;
+}
+.registration-block.active{
+    top: 20%;
+    z-index: 2;
+}
+.close{
+    position: absolute;
+    right: 1.7rem;
+    top: 1.2rem;
+    width: 2rem;
+    height: 2rem;
+    z-index: 10;
+}
+.close:before, .close:after {
+    position: absolute;
+    left: 1rem;
+    content: ' ';
+    height: 2rem;
+    width: 0.4rem;
+    background-color: #333;
+}
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
+}
+.registration-block-form{
+    padding: 3rem 0;
+    position: relative;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 3rem;
+}
+label{
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    font-family: "Helvetica", sans-serif;
+}
+.form-group input{
+    height: 1.7rem;
+    border: 0.1rem solid #1F658A;
+    border-radius: 0.4rem;
+    font-family: "Helvetica", sans-serif;
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+    color: #2C3E50;
+    padding: 0.8rem;
+    outline: none;
+}
+.btn-registration{
+    padding: 1rem;
+    margin: 20px auto 0;
+    width: 50%;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    font-family: "Helvetica", sans-serif;
+    background: #7AB4CC;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+}
+.invalid{
+    color: #F05D2F;
+    font-size: 1.2rem;
+    font-family: "Helvetica", sans-serif;
+    padding-bottom: 0.5rem;
+}
+.invalid-input{
+    color: #F05D2F;
+    background: #FFE0CA;
+    font-size: 1.2rem;
+    font-family: "Helvetica", sans-serif;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+
+
+
+.overlay.active{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 1;
+    background: rgba(31, 101, 138, 0.5);
+}
